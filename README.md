@@ -59,7 +59,11 @@ class ViewModel extends StoreViewModel {
 ### 优势
 
 1、不同的 key，数据不会互相影响，store a update， store b 不会更新
+
 2、×xx 数据更新之后，教上次无变化， 则组件不更新
+
 3、可做到细粒度更新，可更新对象单个字段，其他不更新的字段不受影响
+
 4、无需频繁使用 useState 更新对象，所有的数据可通过 useGlobalStore 获取
+
 5、方便调试。可直接在控制台输入 globalStore 即可获取所有状态
